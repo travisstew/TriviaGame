@@ -1,0 +1,22 @@
+#main-area{
+  text-align: center;
+  width: 960px;
+  margin: 0 auto;
+  height: 600px;
+}
+#display{
+  width: 500px;
+  margin: 0 auto;
+}
+.ans{
+  padding: 30px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+  width: 200px;
+}
+#btn{
+  padding: 50px;
+  padding-left: 70px;
+  padding-right: 70px;
+}
