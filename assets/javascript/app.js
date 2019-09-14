@@ -116,7 +116,7 @@ var questions = [{
       nextQuestion(i);
 
 
-$('.ans').on('click', function(){
+$('#main-area').on('click','.ans' ,function(){
 
    if($(this).data().ans === questions[i].Answer){
        
@@ -125,9 +125,9 @@ $('.ans').on('click', function(){
         countDown = 31;
         right++;
         i++;
-        // $('#main-area').html('<h1>Correct!!!<h1>');
-        //   // $('#main-area').empty();
-        //   htmlAdd();
+        $('#main-area').html('<h1>Correct!!!<h1>');
+          $('#main-area').empty();
+          htmlAdd();
       setTimeout(function(){
         
         nextQuestion(i);
@@ -152,10 +152,12 @@ $('.ans').on('click', function(){
       }
   });
 
-  $('.ans').mouseenter(function(){
+  $('#main-area').on('mouseenter','.ans',function(){
       $(this).css("background", "#B0FEB8");
       $(this).css("border","solid #29B724");
-    }).mouseleave(function(){
+    });
+    
+    $('#main-area').on('mouseleave','.ans',function(){
       $(this).css('background', 'white');
       $(this).css("border","none");
       
